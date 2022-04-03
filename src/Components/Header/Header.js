@@ -4,8 +4,8 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div>
-            <h1 className='brand-name mt-3'>Best buy</h1>
+        <div className='my-3'>
+            <h1 className='brand-name'>Best buy</h1>
             <nav>
                 <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/">Home</NavLink>
                 <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/reviews">Reviews</NavLink>
