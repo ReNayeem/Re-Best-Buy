@@ -4,6 +4,11 @@ nav a{
     padding: 20px;
 }
 
+.navbar-design{
+  box-shadow: 5px 10px 8px #8888880e;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+
 .brand-name {
   background-image: linear-gradient(-45deg, rgb(151, 158, 111), rgb(115, 168, 157), rgb(133, 134, 104), rgb(187, 127, 142)) !important;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -8,7 +8,7 @@ const AllReviews = () => {
     return (
         <div className='second-section all-reviews pb-5'>
             <h1 className='p-5'>All Customer Reviews</h1>
-            <div className='home-reviews container'>
+            <div className='home-reviews container pb-5'>
                 {
                     reviews.map(review => <Reviews key={review.id} review={review}></Reviews>)
                 }

@@ -1,5 +1,6 @@
 .first-section{
     background-color: whitesmoke;
+    margin-top: 106.64px;
 }
 
 .home-first-section{
@@ -92,3 +93,17 @@
        gap: 1rem;
    }
    
+
+   @media only screen and (max-width: 995px){
+        .home-first-section{
+            flex-wrap: wrap;
+        }
+
+        .first-order{
+            order: 1;
+        }
+
+        .second-order{
+            order: 0;
+        }
+   }

@@ -5,12 +5,11 @@ import './Home.css'
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
-    console.log(reviews)
     return (
         <div>
             <div className='first-section'>
                 <div className='home-first-section container d-flex'>
-                    <div>
+                    <div className='first-order'>
                         <h1 className='product-name-text'><span className='h1-text-highlight'>SONY - WH-XB900N</span> <span className='h1-text-highlight-2'>Wireless Noise Cancelling Over-the-Ear Headphones - Gray</span></h1>
                         <br />
                         <p className='product-detail'>Effectively blocks out distracting background noises, so you can enjoy a focused, immersive sound environment. Offers up to 30 hours of use and lasts up to 300 hours on standby mode. Enables simple wireless pairing with your Bluetooth-enabled device. Supports HFP, HSP, A2DP and AVRCP Bluetooth profiles. Deliver powerful sound. Along with a 50Hz - 8kHz microphone frequency response ensures faithful sound reproduction.</p>
@@ -21,7 +20,7 @@ const Home = () => {
                             </svg>
                         </button>
                     </div>
-                    <div>
+                    <div className='second-order'>
                         <img className='product-image' src="Resources/headphone.png" alt="" />
                     </div>
                 </div>
