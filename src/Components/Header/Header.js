@@ -7,10 +7,10 @@ const Header = () => {
         <div>
             <h1 className='brand-name mt-3'>Best buy</h1>
             <nav>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/reviews">Reviews</NavLink>
-                <NavLink to="/dashboard">Dashboard</NavLink>
-                <NavLink to="/blogs">Blogs</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/">Home</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/reviews">Reviews</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/dashboard">Dashboard</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/blogs">Blogs</NavLink>
             </nav>
         </div>
     );
