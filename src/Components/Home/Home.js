@@ -13,6 +13,7 @@ const Home = () => {
     }
     return (
         <div>
+            {/* product section start */}
             <div className='first-section'>
                 <div className='home-first-section container d-flex'>
                     <div className='first-order'>
@@ -31,7 +32,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* product section end */}
 
+            {/* review section start */}
             <div className='second-section pb-5'>
                 <h1 className='p-5'>Customer Reviews</h1>
                 <div className='home-reviews container'>
@@ -47,6 +50,7 @@ const Home = () => {
                     </svg>
                 </button>
             </div>
+            {/* review section end */}
         </div>
     );
 };
