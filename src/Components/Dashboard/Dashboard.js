@@ -47,7 +47,7 @@ const Dashboard = () => {
             <div className='d-flex p-4 container flex-wrap justify-content-center'>
                 <div className='p-4'>
                     <h3 className='line-chart-text'>Month wise sell</h3>
-                    <LineChart className='linechart'
+                    <LineChart
                         width={500}
                         height={425}
                         data={data}
