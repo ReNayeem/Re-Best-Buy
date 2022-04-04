@@ -1,10 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReviews from '../../Hooks/useReviews';
 import Reviews from '../Reviews/Reviews';
 import './Home.css'
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
+    let navigate = useNavigate()
+
+    const clickToAllReviews = () => {
+        navigate('/reviews')
+    }
     return (
         <div>
             <div className='first-section'>
@@ -33,6 +39,13 @@ const Home = () => {
                         reviews.slice(0, 3).map(review => <Reviews key={review.id} review={review}></Reviews>)
                     }
                 </div>
+
+                <button onClick={clickToAllReviews} className="first-section-button mt-4">
+                    <span className="hover-underline-animation"> Show all reviews </span>
+                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                        <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     );

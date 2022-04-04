@@ -82,7 +82,7 @@ const Dashboard = () => {
                     <YAxis />
                     <Tooltip />
                     <Area type="monotone" dataKey="investment" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-                    <Area type="monotone" dataKey="revenue" stackId="1" stroke="#ffc658" fill="#ffc658" />
+                    <Area type="monotone" dataKey="revenue" stackId="1" stroke="olive" fill="olive" />
                 </AreaChart>
             </div>
         </div>
