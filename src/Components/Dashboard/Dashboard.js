@@ -44,46 +44,51 @@ const Dashboard = () => {
 
     return (
         <div className='dashboard'>
-            <h1 className='p-5'>Dashboard</h1>
-            <div className='d-flex container flex-wrap justify-content-center'>
-                <LineChart className='linechart'
-                    width={500}
-                    height={425}
-                    data={data}
-                    margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="sell" stroke="#8884d8" activeDot={{ r: 8 }} />
+            <div className='d-flex p-4 container flex-wrap justify-content-center'>
+                <div className='p-4'>
+                    <h3 className='line-chart-text'>Month wise sell</h3>
+                    <LineChart className='linechart'
+                        width={500}
+                        height={425}
+                        data={data}
+                        margin={{
+                            top: 5,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Line type="monotone" dataKey="sell" stroke="#8884d8" activeDot={{ r: 8 }} />
 
-                </LineChart>
+                    </LineChart>
+                </div>
 
-                <AreaChart
-                    width={500}
-                    height={400}
-                    data={data}
-                    margin={{
-                        top: 10,
-                        right: 30,
-                        left: 0,
-                        bottom: 0,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Area type="monotone" dataKey="investment" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-                    <Area type="monotone" dataKey="revenue" stackId="1" stroke="olive" fill="olive" />
-                </AreaChart>
+                <div className='p-4'>
+                    <h3 className='line-chart-text'>Investment VS Revenue</h3>
+                    <AreaChart
+                        width={500}
+                        height={400}
+                        data={data}
+                        margin={{
+                            top: 10,
+                            right: 30,
+                            left: 0,
+                            bottom: 0,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Area type="monotone" dataKey="investment" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+                        <Area type="monotone" dataKey="revenue" stackId="1" stroke="olive" fill="olive" />
+                    </AreaChart>
+                </div>
             </div>
         </div>
     );
